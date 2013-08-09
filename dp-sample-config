@@ -1,4 +1,6 @@
-#!/bin/sh
+# CONFIG FILE for dp.sh
+# Rename it as .dp-config-<project-name>
+# where <project-name> is magic word to have more config files
 
 # DEBUG MODE
 #C_DEPLOY="f98ff26"
