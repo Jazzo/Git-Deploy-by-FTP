@@ -8,11 +8,6 @@ function usage {
 	echo "\t --not-simulate \tDeploy, not simulate!"
 }
 
-#### Some Variables ####
-COLOR_ALERT="\033[34m"	#Blu
-COLOR_ERROR="\033[31m"	#Red
-COLOR_MSG="\033[35m"	#Violet
-
 ######### Start script ########
 echo $COLOR_ALERT"Production deployment script (ver. 0.2)"
 

@@ -17,3 +17,9 @@ FTP_PASSWORD="ftp-password"
 REPO_CLONED_DIR=$EXPORTED_DIR"source"
 FILENAME_DIFF="deploy-"$C_DEPLOY".diff"
 PRODUCTION_TAG_NAME="production"
+
+#### Color Variables ####
+COLOR_ALERT="\033[34m"	#Blu
+COLOR_ERROR="\033[31m"	#Red
+COLOR_MSG="\033[35m"	#Violet
+
