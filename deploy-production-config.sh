@@ -16,3 +16,4 @@ FTP_PASSWORD="ftp-password"
 # SET some other useful directories
 REPO_CLONED_DIR=$EXPORTED_DIR"source"
 FILENAME_DIFF="deploy-"$C_DEPLOY".diff"
+PRODUCTION_TAG_NAME="production"
