@@ -3,7 +3,7 @@
 #### FUNCTIONS ####
 function usage {
 	echo "usage: \033[32m dp.sh -p <project-name> -d <commit-sha> [--not-simulate]"
-	echo "\t -p, --project \tThe name of the project to deploy (it is the correct configuration file)"
+	echo "\t -p, --project \tThe name of the project to deploy (it is the configuration file that will be used)"
 	echo "\t -d, --deploy \tThe commit you want to deploy"
 	echo "\t --not-simulate \tDeploy, not simulate!"
 }
