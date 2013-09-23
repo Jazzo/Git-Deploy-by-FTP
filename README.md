@@ -41,10 +41,10 @@ In the config file you have to change these values in the "SETTINGS" area:
 ## Usage
 
 	dp.sh -p <project-name> -d <commit-sha> [--not-simulate]
-	 -p, --project 	The name of the project to deploy (it is the configuration file that will be used)
-	 -d, --deploy 	The commit you want to deploy
-	 --not-simulate 	Deploy, not simulate!
-
+	 -p, --project 	 The name of the project to deploy (it is the configuration file that will be used)
+	 -d, --deploy 	 The commit you want to deploy
+	 --not-simulate  Deploy, not simulate!
+	 --no-colors	 Disable colors layout
 * The '-p' parameter is simple to understand (read above the Configuration).
 * The '-d' is the commit that you want to deploy.
 * By default it works as a simulation, only when you will be ready add the '--not-simulate' parameter to deploy to the production environment!
