@@ -124,11 +124,13 @@ while read row; do
 			if curl -u $FTP_USERNAME:$FTP_PASSWORD --output /dev/null --silent --head --fail ftp://$FTP_SERVER$FTP_PATH$f_path; then
 				if [ "$SIMULATION" == 1 ]
 				then
-					curl -u $FTP_USERNAME:$FTP_PASSWORD --output /dev/null --silent --show-error --quote 'DELE $FTP_PATH$f_path' ftp://$FTP_SERVER
+					curl -u $FTP_USERNAME:$FTP_PASSWORD --output /dev/null --silent --show-error --quote "DELE $FTP_PATH$f_path" ftp://$FTP_SERVER
+                    echo "DELETED!";
+                else
+                    echo "DELETED! (SIMULATION, not really deleted)";
 				fi
-				echo "DELETED!";
 			else
-				echo "it does NOT exists!"
+				echo "it does NOT EXISTS!"
 			fi
 			continue;;
 
