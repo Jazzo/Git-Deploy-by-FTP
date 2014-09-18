@@ -2,7 +2,7 @@ Git Deploy by FTP
 =================
 
 This shell script deploy a project from a Git repository by FTP using CURL.
-It is only tested on OSX!
+It is only tested on OSX!!
 
 ## How it works?
 I needed to deploy some projects by FTP because many hosting provider don't provide Git/SSH. The only way to deploy is by FTP.
