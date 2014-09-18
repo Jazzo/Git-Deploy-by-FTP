@@ -105,7 +105,7 @@ echo "Check for '$PRODUCTION_TAG_NAME' tag..."
 C_PRODUCTION=`git rev-list $PRODUCTION_TAG_NAME | head -n 1`
 if [[ -z "$C_PRODUCTION" ]]
 then
-	echo $COLOR_ERROR"The tag 'production' does NOT EXISTS in the repo: \n$PROJECT_REPO_DIR!"
+	echo $COLOR_ERROR"The tag '$PRODUCTION_TAG_NAME' does NOT EXISTS in the repo: \n$PROJECT_REPO_DIR!"
 	exit 0
 else
 	echo $COLOR_MSG"Production environment is on commit: $C_PRODUCTION"
@@ -175,8 +175,8 @@ then
 	echo $COLOR_ALERT"** SIMULATION MODE ENABLED **"
 else
 	cd $PROJECT_REPO_DIR
-	git tag -f production $C_DEPLOY
-	echo $COLOR_MSG"Moved production tag to the commit '$C_DEPLOY'"
+	git tag -f $PRODUCTION_TAG_NAME $C_DEPLOY
+	echo $COLOR_MSG"Moved production tag '$PRODUCTION_TAG_NAME' to the commit '$C_DEPLOY'"
 	echo "Success!"
 fi
 # Reset sh color
