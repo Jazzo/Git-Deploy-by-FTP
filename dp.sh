@@ -120,7 +120,7 @@ git clone file://$PROJECT_REPO_DIR $REPO_CLONED_DIR
 cd $REPO_CLONED_DIR
 
 echo $COLOR_MSG"Get diff between commits: $C_PRODUCTION - $C_DEPLOY "$COLOR_RESET
-git diff --name-status $C_PRODUCTION $C_DEPLOY > $EXPORTED_DIR$FILENAME_DIFF
+git diff --name-status --diff-filter=AMDR --no-renames $C_PRODUCTION $C_DEPLOY > $EXPORTED_DIR$FILENAME_DIFF
 
 echo $COLOR_MSG"Checking out $C_DEPLOY ..."$COLOR_RESET
 git checkout $C_DEPLOY
